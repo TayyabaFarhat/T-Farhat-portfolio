@@ -12,8 +12,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 1.  Clone the repository (if you haven't already):
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/TayyabaFarhat/tayyaba-portfolio.git
+    cd tayyaba-portfolio
     ```
 
 2.  Install dependencies:
@@ -48,10 +48,9 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
+git remote add origin https://github.com/TayyabaFarhat/tayyaba-portfolio.git
 git push -u origin main
 ```
-*(Replace `<YOUR_USERNAME>` and `<YOUR_REPO_NAME>` with your actual GitHub details).*
 
 ### 3. Install `gh-pages`
 We will use a package to handle the deployment automatically.
@@ -70,7 +69,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react(), ...],
-  base: "/<YOUR_REPO_NAME>/", // <--- ADD THIS LINE (e.g., "/tayyaba-portfolio/")
+  base: "/tayyaba-portfolio/", // <--- ADD THIS LINE (e.g., "/tayyaba-portfolio/")
   resolve: {
     // ...
   },
@@ -82,7 +81,7 @@ Open `package.json` and add these two items:
 
 1.  **Add `homepage`** at the top level:
     ```json
-    "homepage": "https://<YOUR_USERNAME>.github.io/<YOUR_REPO_NAME>",
+    "homepage": "https://TayyabaFarhat.github.io/tayyaba-portfolio",
     ```
 
 2.  **Add `predeploy` and `deploy` scripts** under `"scripts"`:
