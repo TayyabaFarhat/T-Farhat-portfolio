@@ -4,20 +4,29 @@ import { useEffect, useState } from "react";
 const experiences = [
   {
     period: "Sep 2024 — Present",
-    role: "Senior Manager",
-    company: "Superior University",
+    role: "Senior Manager Incubator",
+    company: "Superior University (Innovation District 92)",
     description:
-      "Leading incubators and technology incubation initiatives, supervising BSCS students’ FYP projects, and advising IEEE WIE Chapter.",
-    technologies: ["Incubation", "AI Research", "Student Supervision", "Leadership"],
+      "Leading incubators and technology incubation initiatives. Managing startup ecosystems, supervising FYP projects, and advising IEEE WIE Chapter.",
+    technologies: ["Incubation", "Startup Ecosystem", "Mentorship", "Leadership"],
     current: true,
   },
   {
     period: "Jan 2020 — Sep 2024",
-    role: "Senior Lecturer of Software Engineering",
+    role: "Sr. Lecturer of Software Engineering",
     company: "Superior University Lahore",
     description:
-      "Taught Database Systems, Data Structures & Algorithms, supervised FYP projects, and mentored students; advisor for IEEE WIE chapter.",
-    technologies: ["Teaching", "Database Systems", "Algorithms", "Student Mentorship"],
+      "Taught Database Systems, Data Structures & Algorithms. Supervised FYP of BSCS student groups and served as Advisor of IEEE Chapter WIE (Women in Engineering).",
+    technologies: ["Teaching", "Database Systems", "Algorithms", "FYP Supervision"],
+    current: false,
+  },
+  {
+    period: "Sep 2017 — Sep 2024",
+    role: "Head Of Training And Development",
+    company: "Department of Computer Science & IT, Superior University",
+    description:
+      "Organized training sessions for faculty and students to improve their skill sets. Focused on coaching and training needs analysis.",
+    technologies: ["Training", "Faculty Development", "Coaching", "Skill Building"],
     current: false,
   },
   {
@@ -25,17 +34,8 @@ const experiences = [
     role: "Lecturer of Computer Science",
     company: "Superior University",
     description:
-      "Delivered courses in computer science, supported deep learning projects, and contributed to departmental training programs.",
-    technologies: ["Teaching", "Deep Learning", "Training Sessions", "Python"],
-    current: false,
-  },
-  {
-    period: "Sep 2017 — Sep 2024",
-    role: "Head of Training and Development",
-    company: "Department of Computer Science & IT, Superior University",
-    description:
-      "Organized faculty and student training sessions to enhance skill sets and knowledge in modern technologies.",
-    technologies: ["Training", "Skill Development", "Coaching", "Workshops"],
+      "Delivered courses in computer science, specialized in Deep Learning and Training Needs Analysis.",
+    technologies: ["Deep Learning", "Lecturing", "Computer Science"],
     current: false,
   },
 ];
@@ -141,9 +141,8 @@ export const Experience = () => {
 
                 {/* Content Card */}
                 <motion.div
-                  className={`pl-8 md:pl-0 ${
-                    idx % 2 === 0 ? "md:pr-16 md:text-right" : "md:col-start-2 md:pl-16"
-                  }`}
+                  className={`pl-8 md:pl-0 ${idx % 2 === 0 ? "md:pr-16 md:text-right" : "md:col-start-2 md:pl-16"
+                    }`}
                 >
                   <motion.div
                     className="glass p-6 rounded-2xl border border-primary/30 hover:border-primary/60 shadow-lg hover:shadow-[0_25px_50px_rgba(32,178,166,0.25)] transition-all duration-500"
@@ -159,9 +158,8 @@ export const Experience = () => {
                     <p className="text-sm text-muted-foreground mt-4">{exp.description}</p>
 
                     <div
-                      className={`flex flex-wrap gap-2 mt-4 ${
-                        idx % 2 === 0 ? "md:justify-end" : ""
-                      }`}
+                      className={`flex flex-wrap gap-2 mt-4 ${idx % 2 === 0 ? "md:justify-end" : ""
+                        }`}
                     >
                       {exp.technologies.map((tech) => (
                         <span

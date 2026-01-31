@@ -5,47 +5,65 @@ import { motion } from "framer-motion";
 
 const publications = [
   {
-    title:
-      "Customer Segmentation for Targeted Marketing: A Comparative Analysis of Clustering Techniques",
-    issuer: "2023 25th International Multitopic Conference (INMIC), IEEE",
-    issued: "Nov 17, 2023",
-    skills: [
-      "Customer Segmentation",
-      "K-Means Clustering",
-      "Hierarchical Clustering",
-      "CRISP-DM",
-      "Data Mining",
-      "Targeted Marketing",
-    ],
-    link: "https://ieeexplore.ieee.org/abstract/document/10466067",
+    title: "An Explainable Deep Learning Framework for Multimodal Autism Diagnosis Using XAI GAMI-Net and Hypernetworks",
+    issuer: "Diagnostics 15 (17), 2232",
+    issued: "2025",
+    skills: ["XAI", "GAMI-Net", "Autism Diagnosis", "Hypernetworks"],
+    link: "https://www.researchgate.net/publication/395240708_An_Explainable_Deep_Learning_Framework_for_Multimodal_Autism_Diagnosis_Using_XAI_GAMI-Net_and_Hypernetworks",
+    abstract: "Background: Autism Spectrum Disorder (ASD) is a neurodevelopmental condition characterized by heterogeneous behavioral and neurological patterns, complicating timely and accurate diagnosis..."
   },
   {
-    title:
-      "Facial Image-Based Autism Detection: A Comparative Study of Deep Neural Network Classifiers",
-    issuer: "CMC",
-    issued: "Aug 15, 2023",
-    skills: [
-      "Deep Learning",
-      "VGG16",
-      "MobileNet",
-      "Machine Learning",
-      "Computer Vision",
-      "Autism Detection",
-    ],
-    link: "https://www.techscience.com/cmc/v78n1/55389",
+    title: "Unveiling Data Scientist Salaries: Predictive Modeling for Compensation Trends",
+    issuer: "Journal of Computing & Biomedical Informatics 8 (02)",
+    issued: "2025",
+    skills: ["Predictive Modeling", "Data Science", "Salary Trends"],
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sbJdyucAAAAJ&citation_for_view=sbJdyucAAAAJ:zYLM7Y9cAGgC",
+  },
+  {
+    title: "Facial Image-Based Autism Detection: A Comparative Study of Deep Neural Network Classifiers",
+    issuer: "Computers, Materials & Continua 78 (1)",
+    issued: "2024",
+    skills: ["Deep Learning", "VGG16", "MobileNet", "Autism Detection"],
+    link: "https://www.researchgate.net/publication/376569691_Facial_Image-Based_Autism_Detection_A_Comparative_Study_of_Deep_Neural_Network_Classifiers",
+    abstract: "Timely and precise ASD detection is crucial, particularly in regions with limited diagnostic resources like Pakistan. This study aims to conduct an extensive comparative analysis of deep neural network classifiers..."
+  },
+  {
+    title: "Customer Segmentation for Targeted Marketing: A Comparative Analysis of Clustering Techniques",
+    issuer: "2023 25th International Multitopic Conference (INMIC)",
+    issued: "Nov 17, 2023",
+    skills: ["K-Means", "Hierarchical Clustering", "CRISP-DM", "Marketing"],
+    link: "https://ieeexplore.ieee.org/abstract/document/10466067",
+    abstract: "This research employs the Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology to investigate customer segmentation for targeted marketing. Our study applies K-Means and Hierarchical Clustering algorithms to create customer segments."
   },
   {
     title: "Deep Learning for Sarcasm Identification in News Headlines",
-    issuer: "Applied Sciences (MDPI)",
+    issuer: "Applied Sciences 13 (9), 5586",
     issued: "Apr 16, 2023",
-    skills: [
-      "Natural Language Processing",
-      "Deep Learning",
-      "LSTM",
-      "Sarcasm Detection",
-      "Text Classification",
-    ],
+    skills: ["NLP", "Deep Learning", "LSTM", "Sarcasm Detection"],
     link: "https://www.mdpi.com/2076-3417/13/9/5586",
+    abstract: "This paper proposes a deep learning architecture-based model for sarcasm identification in news headlines. The model uses LSTM to capture temporal dependencies and utilizes a GlobalMaxPool1D layer for better feature extraction."
+  },
+  {
+    title: "Predicting Heart Disease with Machine Learning: A Comparative Study of Classifiers",
+    issuer: "International Conference on Computing & Emerging Technologies",
+    issued: "2023",
+    skills: ["Machine Learning", "Heart Disease Prediction", "Classification"],
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sbJdyucAAAAJ&citation_for_view=sbJdyucAAAAJ:Tyk-4Ss8FVUC"
+  },
+  {
+    title: "Impact of excessive usage of smartphone in Kids",
+    issuer: "International Journal 10 (3)",
+    issued: "2021",
+    skills: ["Social Impact", "Smartphone Usage", "Child Development"],
+    link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=sbJdyucAAAAJ&citation_for_view=sbJdyucAAAAJ:d1gkVwhDpl0C"
+  },
+  {
+    title: "ReqSpecOnto: Investigating Explicit Software Requirements Specification",
+    issuer: "Innovative Computing Review 1 (2), 44-70",
+    issued: "2021",
+    skills: ["Requirements Engineering", "Ontology", "Software Specs"],
+    link: "https://www.researchgate.net/publication/360106944_ReqSpecOnto_Investigating_Explicit_Software_Requirements_Specification",
+    abstract: "Investigation of explicit software requirements specification using ontologies to reduce ambiguities in natural language requirements."
   },
 ];
 
@@ -127,66 +145,93 @@ export const Projects = () => {
             <motion.div
               key={idx}
               variants={card}
-              whileHover={{
-                y: -6,
-                boxShadow: "0 25px 50px rgba(0,0,0,0.2)",
-              }}
-              transition={{ type: "spring", stiffness: 250 }}
-              className="group glass rounded-2xl p-6 border border-primary/30"
+              whileHover={{ y: -12, scale: 1.02 }}
+              className="group premium-card rounded-3xl p-8 relative overflow-hidden isolate"
             >
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                  {pub.title}
-                </h3>
+              {/* Enhanced Hover Gradient Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-secondary-foreground/5 to-highlight/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-[-1]" />
+
+              {/* Shimmer effect on hover */}
+              <div className="absolute inset-0 shimmer-effect animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+
+              <div className="flex items-start justify-between mb-4">
+                <div className="space-y-1 flex-1">
+                  <p className="text-xs font-bold tracking-wider text-primary uppercase flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                    {pub.issuer}
+                  </p>
+                  <h3 className="text-xl font-bold leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary-foreground group-hover:bg-clip-text transition-all duration-300">
+                    {pub.title}
+                  </h3>
+                </div>
                 <a
                   href={pub.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="ml-4 p-3 rounded-full bg-white/5 hover:bg-primary hover:text-white transition-all duration-300 group-hover:rotate-45 group-hover:scale-110 border border-primary/10 hover:border-primary/30"
                 >
                   <ArrowUpRight className="w-5 h-5" />
                 </a>
               </div>
-              <p className="text-sm text-muted-foreground mb-2">{pub.issuer}</p>
-              <p className="text-xs text-muted-foreground mb-4">
-                Issued: {pub.issued}
-              </p>
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
+                <span className="font-medium">Issued: {pub.issued}</span>
+              </div>
+
+              {pub.abstract && (
+                <p className="text-sm text-muted-foreground/80 mb-6 line-clamp-3 leading-relaxed group-hover:text-muted-foreground transition-colors">
+                  {pub.abstract}
+                </p>
+              )}
+
+              <div className="flex flex-wrap gap-2 mt-auto">
                 {pub.skills.map((skill, skillIdx) => (
-                  <motion.span
+                  <span
                     key={skillIdx}
-                    whileHover={{ scale: 1.1, color: "#fff" }}
-                    className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground transition-all duration-300"
+                    className="px-3 py-1.5 text-[11px] font-semibold tracking-wide rounded-full bg-white/5 border border-white/10 text-muted-foreground group-hover:border-primary/30 group-hover:text-primary group-hover:bg-primary/5 transition-all duration-300"
                   >
                     {skill}
-                  </motion.span>
+                  </span>
                 ))}
               </div>
+
+              {/* Bottom glow line */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </motion.div>
 
         {/* VIEW ALL CTA */}
-       {/* VIEW ALL CTA */}
-<motion.div
-  className="text-center mt-12"
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.8, delay: 0.5 }}
->
-  <a
-    href="http://researchgate.net/profile/Tayyaba-Farhat"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <AnimatedBorderButton>
-      View All Publications
-      <ArrowUpRight className="w-5 h-5" />
-    </AnimatedBorderButton>
-  </a>
-</motion.div>
+        <motion.div
+          className="flex flex-wrap justify-center gap-4 mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <a
+            href="https://scholar.google.com/citations?user=sbJdyucAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              Google Scholar
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
 
+          <a
+            href="https://www.researchgate.net/profile/Tayyaba-Farhat"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              ResearchGate
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
+        </motion.div>
       </div>
     </section>
   );

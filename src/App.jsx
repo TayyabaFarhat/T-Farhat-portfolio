@@ -10,11 +10,17 @@ import { Experience } from "@/sections/Experience";
 import { Contact } from "@/sections/Contact";
 import { Footer } from "@/layout/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
+import { InteractiveBackground } from "@/components/InteractiveBackground";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { Testimonials } from "./sections/Testimonials";
+import { Education } from "@/sections/Education";
 
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden relative">
+      {/* Interactive particle background */}
+      <InteractiveBackground />
+
       {/* Premium cursor glow */}
       <CursorGlow />
 
@@ -26,11 +32,15 @@ function App() {
         <Skills />
         <Endorsements />
         <Projects />
+        <Education />
         <Experience />
         <Testimonials />
         <Contact />
       </main>
       <Footer />
+
+      {/* Scroll to top button */}
+      <ScrollToTop />
     </div>
   );
 }

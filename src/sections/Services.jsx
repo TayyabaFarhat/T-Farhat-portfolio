@@ -1,4 +1,3 @@
-// Services.jsx
 import {
   Brain,
   Lightbulb,
@@ -7,58 +6,47 @@ import {
   Briefcase,
   Palette,
   ArrowRight,
+  Users,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/Button";
 
 const services = [
   {
-    icon: Brain,
-    title: "AI & Machine Learning Consulting",
-    description:
-      "Providing strategic guidance on applying artificial intelligence and machine learning to real-world business and research challenges.",
-  },
-  {
-    icon: Network,
-    title: "Deep Learning & Advanced AI Solutions",
-    description:
-      "Designing and implementing advanced deep learning models including neural networks and transformers.",
-  },
-  {
     icon: Lightbulb,
-    title: "Custom AI Product Development",
+    title: "AI Strategy & Roadmap",
     description:
-      "Building tailored AI-powered products from concept to deployment with scalability in mind.",
+      "Helping founders define where AI makes sense in their product, creating clear roadmaps aligned with business goals.",
+  },
+  {
+    icon: Brain,
+    title: "Research-to-Product Translation",
+    description:
+      "Converting academic research and complex algorithms into practical, scalable market-ready solutions.",
   },
   {
     icon: GraduationCap,
-    title: "AI Research & Innovation Services",
+    title: "Incubation & Program Design",
     description:
-      "Supporting academic and industrial research through experimental design and evaluation.",
+      " designing and managing incubation programs for universities and organizations to foster startup growth.",
   },
   {
     icon: Briefcase,
-    title: "AI Startup & Product Strategy",
+    title: "Business & IT Consulting",
     description:
-      "Advising startups on AI-driven strategy, MVP development, and feasibility analysis.",
+      "Expert consulting in Business Strategy, IT implementation, and Career Development Coaching.",
   },
   {
-    icon: Palette,
-    title: "AI-Powered Web & Mobile Solutions",
+    icon: Users,
+    title: "Founder Mentorship",
     description:
-      "Developing intelligent web and mobile apps with integrated AI capabilities.",
+      "Mentoring early-stage founders on product development, team building, and fundraising strategies.",
   },
   {
-    icon: Brain,
-    title: "Model Deployment, MLOps & Integration",
+    icon: Network,
+    title: "Corporate Training",
     description:
-      "Deploying and maintaining AI models with robust MLOps pipelines.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Training, Mentorship & Enablement",
-    description:
-      "Providing structured training and mentorship programs in AI and ML.",
+      "Delivering workshops and training sessions on AI, Machine Learning, and Entrepreneurship.",
   },
 ];
 
@@ -134,26 +122,35 @@ export const Services = () => {
               key={index}
               variants={item}
               whileHover={{
-                y: -8,
-                boxShadow: "0 30px 60px rgba(0,0,0,0.2)",
+                y: -12,
+                scale: 1.03,
               }}
-              className="glass p-8 rounded-3xl border border-primary/30 transition-all"
+              className="group premium-card p-8 rounded-3xl border border-primary/20 transition-all relative isolate"
             >
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary-foreground/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-[-1]" />
+
+              {/* Icon container with enhanced effects */}
               <motion.div
-                className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6"
-                whileHover={{ scale: 1.15, rotate: 6 }}
+                className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary-foreground/10 flex items-center justify-center mb-6 overflow-hidden"
+                whileHover={{ scale: 1.15, rotate: 8 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <service.icon className="w-6 h-6 text-primary" />
+                {/* Icon glow effect */}
+                <div className="absolute inset-0 bg-primary/20 blur-xl group-hover:bg-primary/40 transition-colors duration-300" />
+                <service.icon className="relative w-7 h-7 text-primary group-hover:text-secondary-foreground transition-colors duration-300" />
               </motion.div>
 
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
                 {service.title}
               </h3>
 
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                 {service.description}
               </p>
+
+              {/* Bottom accent line */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </motion.div>

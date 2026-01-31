@@ -1,0 +1,544 @@
+#skills:
+```
+    IncubatorsIncubators
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+            Imran Liaqat profile picture
+        Endorsed by Imran Liaqat (mutual connection)Endorsed by Imran Liaqat (mutual connection)
+        3 endorsements3 endorsements
+    Technology IncubationTechnology Incubation
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+            Imran Liaqat profile picture
+        Endorsed by Imran Liaqat (mutual connection)Endorsed by Imran Liaqat (mutual connection)
+        3 endorsements3 endorsements
+    IncubationIncubation
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        1 endorsement1 endorsement
+    Idea IncubationIdea Incubation
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        1 endorsement1 endorsement
+    Product IncubationProduct Incubation
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        1 endorsement1 endorsement
+    EntrepreneurshipEntrepreneurship
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        2 endorsements2 endorsements
+    Entrepreneurship DevelopmentEntrepreneurship Development
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        2 endorsements2 endorsements
+    Entrepreneurship EducationEntrepreneurship Education
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        2 endorsements2 endorsements
+    Youth EntrepreneurshipYouth Entrepreneurship
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        2 endorsements2 endorsements
+    Entrepreneurial OrganizationsEntrepreneurial Organizations
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        1 endorsement1 endorsement
+    Social EntrepreneurshipSocial Entrepreneurship
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        1 endorsement1 endorsement
+    Creative EntrepreneurshipCreative Entrepreneurship
+            Company logo
+        Senior Manager at Superior UniversitySenior Manager at Superior University
+        1 endorsement1 endorsement
+    Quantitative AnalyticsQuantitative Analytics
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+        1 endorsement1 endorsement
+    Predictive ModelingPredictive Modeling
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+        2 endorsements2 endorsements
+    Deep Neural Networks (DNN)Deep Neural Networks (DNN)
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+        2 endorsements2 endorsements
+    Data ModelingData Modeling
+            Company logo
+        2 experiences at Superior University Lahore2 experiences at Superior University Lahore
+        2 endorsements2 endorsements
+    Optimization TechniquesOptimization Techniques
+            Company logo
+        2 experiences at Superior University Lahore2 experiences at Superior University Lahore
+            Company logo
+        Python for DataSciencePython for DataScience
+            Company logo
+        Using Python for ResearchUsing Python for Research
+        Show all 6 details
+    Unsupervised LearningUnsupervised Learning
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+        1 endorsement1 endorsement
+    OptimizationOptimization
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+            Company logo
+        Python for DataSciencePython for DataScience
+            Company logo
+        Analyzing Data with PythonAnalyzing Data with Python
+        Show all 4 details
+    Oral CommunicationOral Communication
+            Company logo
+        3 experiences across Superior University Lahore and 1 other company3 experiences across Superior University Lahore and 1 other company
+            Company logo
+        2 educational experiences at Lahore College for Women University and 1 other school2 educational experiences at Lahore College for Women University and 1 other school
+        3 endorsements3 endorsements
+    CommunicationCommunication
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+            Company logo
+        Lahore College for Women UniversityLahore College for Women University
+        2 endorsements2 endorsements
+    Convolutional Neural Networks (CNN)Convolutional Neural Networks (CNN)
+            Company logo
+        2 experiences at Superior University Lahore2 experiences at Superior University Lahore
+        3 endorsements3 endorsements
+    Text ClassificationText Classification
+            Company logo
+        2 experiences at Superior University Lahore2 experiences at Superior University Lahore
+            Company logo
+        Lahore College for Women UniversityLahore College for Women University
+        3 endorsements3 endorsements
+    PreziPrezi
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        2 endorsements2 endorsements
+    Training Needs AnalysisTraining Needs Analysis
+            Company logo
+        3 experiences across Superior University Lahore and 1 other company3 experiences across Superior University Lahore and 1 other company
+            Company logo
+        Government College University, LahoreGovernment College University, Lahore
+        2 endorsements2 endorsements
+    Training DeliveryTraining Delivery
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        1 endorsement1 endorsement
+    Succession PlanningSuccession Planning
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        1 endorsement1 endorsement
+    Curriculum DevelopmentCurriculum Development
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        1 endorsement1 endorsement
+    CoachingCoaching
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        2 endorsements2 endorsements
+    PersistencePersistence
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        2 endorsements2 endorsements
+    Educational LeadershipEducational Leadership
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        2 endorsements2 endorsements
+    Team ManagementTeam Management
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+        1 endorsement1 endorsement
+    TeamworkTeamwork
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+            Company logo
+        Lahore College for Women UniversityLahore College for Women University
+        2 endorsements2 endorsements
+    Python (Programming Language)Python (Programming Language)
+            Company logo
+        2 experiences across Superior University Lahore and 1 other company2 experiences across Superior University Lahore and 1 other company
+            Company logo
+        2 educational experiences at Lahore College for Women University and 1 other school2 educational experiences at Lahore College for Women University and 1 other school
+            Company logo
+        Intro to Python for Data Science CourseIntro to Python for Data Science Course
+        Show all 7 details
+    JavaJava
+        26 endorsements26 endorsements
+    JavaScriptJavaScript
+        25 endorsements25 endorsements
+    HTMLHTML
+        20 endorsements20 endorsements
+    Software DevelopmentSoftware Development
+        13 endorsements13 endorsements
+    Web DevelopmentWeb Development
+        7 endorsements7 endorsements
+    Mobile ApplicationsMobile Applications
+        5 endorsements5 endorsements
+    ResearchResearch
+        5 endorsements5 endorsements
+    Human Computer InteractionHuman Computer Interaction
+        1 endorsement1 endorsement
+    Usability TestingUsability Testing
+        3 endorsements3 endorsements
+    SQLSQL
+        12 endorsements12 endorsements
+    MySQLMySQL
+        11 endorsements11 endorsements
+    PHPPHP
+        6 endorsements6 endorsements
+    Microsoft SQL ServerMicrosoft SQL Server
+        5 endorsements5 endorsements
+    CSSCSS
+        3 endorsements3 endorsements
+    C#C#
+        3 endorsements3 endorsements
+    ASP.NETASP.NET
+        3 endorsements3 endorsements
+    TeachingTeaching
+        5 endorsements5 endorsements
+    LecturingLecturing
+        3 endorsements3 endorsements
+    Usability EngineeringUsability Engineering
+        2 endorsements2 endorsements
+    Web HostingWeb Hosting
+        2 endorsements2 endorsements
+    Website UpdatingWebsite Updating
+        2 endorsements2 endorsements
+    Database SystemsDatabase Systems
+        3 endorsements3 endorsements
+    Software Architectural DesignSoftware Architectural Design
+        2 endorsements2 endorsements
+    Software Design PatternsSoftware Design Patterns
+        2 endorsements2 endorsements
+    Algorithm AnalysisAlgorithm Analysis
+        2 endorsements2 endorsements
+    Data structures and algorithmData structures and algorithm
+        1 endorsement1 endorsement
+    Transact-SQL (T-SQL)Transact-SQL (T-SQL)
+        Passed LinkedIn Skill AssessmentPassed LinkedIn Skill Assessment
+    C++C++
+    Object-Oriented Programming (OOP)Object-Oriented Programming (OOP)
+        1 endorsement1 endorsement
+    Research and Development (R&D)Research and Development (R&D)
+        1 endorsement1 endorsement
+    Data AnalysisData Analysis
+        1 endorsement1 endorsement
+    Analytical SkillsAnalytical Skills
+        1 endorsement1 endorsement
+    Machine LearningMachine Learning
+        1 endorsement1 endorsement
+    Deep LearningDeep Learning
+            Company logo
+        2 experiences at Superior University Lahore2 experiences at Superior University Lahore
+            Company logo
+        Analyzing Data with PythonAnalyzing Data with Python
+            Company logo
+        Python EssentialsPython Essentials
+        Show all 4 details
+    TensorFlowTensorFlow
+            Company logo
+        Sr. Lecturer of Software Engineering at Superior University LahoreSr. Lecturer of Software Engineering at Superior University Lahore
+    Artificial Neural NetworksArtificial Neural Networks
+            Company logo
+        3 experiences across Superior University Lahore and 1 other company3 experiences across Superior University Lahore and 1 other company
+            Company logo
+        Analyzing Data with PythonAnalyzing Data with Python
+            Company logo
+        Python EssentialsPython Essentials
+        Show all 4 details
+    Neural NetworksNeural Networks
+            Company logo
+        Learning Graph Neural NetworksLearning Graph Neural Networks
+        1 endorsement1 endorsement
+    Artificial Intelligence (AI)Artificial Intelligence (AI)
+            Company logo
+        2 experiences at Superior University Lahore2 experiences at Superior University Lahore
+        1 endorsement1 endorsement
+    DatabasesDatabases
+        1 endorsement1 endorsement
+    OpenAI ProductsOpenAI Products
+            Company logo
+        Improving Insights with OpenAI's Advanced Data AnalysisImproving Insights with OpenAI's Advanced Data Analysis
+    Artificial Intelligence for BusinessArtificial Intelligence for Business
+            Company logo
+        Improving Insights with OpenAI's Advanced Data AnalysisImproving Insights with OpenAI's Advanced Data Analysis
+    Graph NetworksGraph Networks
+            Company logo
+        Learning Graph Neural NetworksLearning Graph Neural Networks
+```
+
+Publication
+```
+
+Customer Segmentation for Targeted Marketing: A Comparative Analysis of Clustering TechniquesCustomer Segmentation for Targeted Marketing: A Comparative Analysis of Clustering Techniques
+2023 25th International Multitopic Conference (INMIC) IEEE · Nov 17, 20232023 25th International Multitopic Conference (INMIC) IEEE · Nov 17, 2023
+
+    Show publication https://ieeexplore.ieee.org/abstract/document/10466067
+        In the contemporary landscape of data-driven decision-making, businesses are increasingly harnessing customer segmentation as a strategic tool for tailoring their marketing endeavors. his research employs the Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology to investigate customer segmentation for targeted marketing. It encompasses phases such as data understanding, preprocessing, modeling, evaluation, deployment, and monitoring. Our study applies K-Means and Hierarchical Clustering algorithms to create customer segments. While Hierarchical Clustering provides a visually insightful segmentation structure, K-Means excels in terms of the Silhouette score, a crucial clustering metric. Overall, K-Means Clustering emerges as the superior choice due to its interpretability and comprehensive utility. This research contributes to data-driven marketing by offering insights for businesses seeking to enhance marketing strategies, elevate customer engagement, and boost revenue.In the contemporary landscape of data-driven decision-making, businesses are increasingly harnessing customer segmentation as a strategic tool for tailoring their marketing endeavors. his research employs the Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology to investigate customer segmentation for targeted marketing. It encompasses phases such as data understanding, preprocessing, modeling, evaluation, deployment, and monitoring. Our study applies K-Means and Hierarchical Clustering algorithms to create customer segments. While Hierarchical Clustering provides a visually insightful segmentation structure, K-Means excels in terms of the Silhouette score, a crucial clustering metric. Overall, K-Means Clustering emerges as the superior choice due to its interpretability and comprehensive utility. This research contributes to data-driven marketing by offering insights for businesses seeking to enhance marketing strategies, elevate customer engagement, and boost revenue.
+
+Facial Image-Based Autism Detection: A Comparative Study of Deep Neural Network ClassifiersFacial Image-Based Autism Detection: A Comparative Study of Deep Neural Network Classifiers
+CMC · Aug 15, 2023CMC · Aug 15, 2023
+
+    Show publication https://www.techscience.com/cmc/v78n1/55389
+        Autism Spectrum Disorder (ASD) is a neurodevelopmental condition characterized by significant challenges in social interaction, communication, and repetitive behaviors. Timely and precise ASD detection is crucial, particularly in regions with limited diagnostic resources like Pakistan. This study aims to conduct an extensive comparative analysis of various machine learning classifiers for ASD detection using facial images to identify an accurate and cost-effective solution tailored to the local context. The research involves experimentation with VGG16 and MobileNet models, exploring different batch sizes, optimizers, and learning rate schedulers. In addition, the “Orange” machine learning tool is employed to evaluate classifier performance and automated image processing capabilities are utilized within the tool. The findings unequivocally establish VGG16 as the most effective classifier with a 5-fold cross-validation approach. Specifically, VGG16, with a batch size of 2 and the Adam optimizer, trained for 100 epochs, achieves a remarkable validation accuracy of 99% and a testing accuracy of 87%. Furthermore, the model achieves an F1 score of 88%, precision of 85%, and recall of 90% on test images. To validate the practical applicability of the VGG16 model with 5-fold cross-validation, the study conducts further testing on a dataset sourced from autism centers in Pakistan, resulting in an accuracy rate of 85%. This reaffirms the model’s suitability for real-world ASD detection. This research offers valuable insights into classifier performance, emphasizing the potential of machine learning to deliver precise and accessible ASD diagnoses via facial image analysis.Autism Spectrum Disorder (ASD) is a neurodevelopmental condition characterized by significant challenges in social interaction, communication, and repetitive behaviors. Timely and precise ASD detection is crucial, particularly in regions with limited diagnostic resources like Pakistan. This study aims to conduct an extensive comparative analysis of various machine learning classifiers for ASD detection using facial images to identify an accurate and cost-effective solution tailored to the local context. The research involves experimentation with VGG16 and MobileNet models, exploring different batch sizes, optimizers, and learning rate schedulers. In addition, the “Orange” machine learning tool is employed to evaluate classifier performance and automated image processing capabilities are utilized within the tool. The findings unequivocally establish VGG16 as the most effective classifier with a 5-fold cross-validation approach. Specifically, VGG16, with a batch size of 2 and the Adam optimizer, trained for 100 epochs, achieves a remarkable validation accuracy of 99% and a testing accuracy of 87%. Furthermore, the model achieves an F1 score of 88%, precision of 85%, and recall of 90% on test images. To validate the practical applicability of the VGG16 model with 5-fold cross-validation, the study conducts further testing on a dataset sourced from autism centers in Pakistan, resulting in an accuracy rate of 85%. This reaffirms the model’s suitability for real-world ASD detection. This research offers valuable insights into classifier performance, emphasizing the potential of machine learning to deliver precise and accessible ASD diagnoses via facial image analysis.
+
+Deep Learning for Sarcasm Identification in News Headlines Deep Learning for Sarcasm Identification in News Headlines 
+APPLIED SCIENCES MDPI · Apr 16, 2023APPLIED SCIENCES MDPI · Apr 16, 2023
+
+    Show publication https://www.mdpi.com/2076-3417/13/9/5586
+        Sarcasm is a mode of expression whereby individuals communicate their positive or negative sentiments through words contrary to their intent. This communication style is prevalent in news headlines and social media platforms, making it increasingly challenging for individuals to detect sarcasm accurately. To mitigate this challenge, developing an intelligent system that can detect sarcasm in headlines and news is imperative. This research paper proposes a deep learning architecture-based model for sarcasm identification in news headlines. The proposed model has three main objectives: (1) to comprehend the original meaning of the text or headlines, (2) to learn the nature of sarcasm, and (3) to detect sarcasm in the text or headlines. Previous studies on sarcasm detection have utilized datasets of tweets and employed hashtags to differentiate between ordinary and sarcastic tweets depending on the limited dataset. However, these datasets were prone to noise regarding language and tags. In contrast, using multiple datasets in this study provides a comprehensive understanding of sarcasm detection in online communication. By incorporating different types of sarcasm from the Sarcasm Corpus V2 from Baskin Engineering and sarcastic news headlines from The Onion and HuffPost, the study aims to develop a model that can generalize well across different contexts. The proposed model uses LSTM to capture temporal dependencies, while the proposed model utilizes a GlobalMaxPool1D layer for better feature extraction. The model was evaluated on training and test data with an accuracy score of 0.999 and 0.925, respectively.
+```
+
+Licenses & Certifications
+```
+
+LinkedIn logo
+Improving Insights with OpenAI's Advanced Data AnalysisImproving Insights with OpenAI's Advanced Data Analysis
+LinkedInLinkedIn Issued Aug 2024Issued Aug 2024
+
+    Show credential https://www.linkedin.com/learning/certificates/cc54f965c4294f8f5db79952e011a9d4cef96622e02b2a5d37ecc96dccdd2411?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BLsTR6rfURUWYzWCvjNn9Pw%3D%3D
+        Skills: OpenAI Products · Artificial Intelligence for Business · Data AnalysisSkills: OpenAI Products · Artificial Intelligence for Business · Data Analysis
+
+LinkedIn logo
+Learning Graph Neural NetworksLearning Graph Neural Networks
+LinkedInLinkedIn Issued Aug 2024Issued Aug 2024
+
+    Show credential https://www.linkedin.com/learning/certificates/005719e7c6e8def822bb75147cfe8b6dbbde06c6467f7b2c59f205dbc931ab56?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BLsTR6rfURUWYzWCvjNn9Pw%3D%3D
+        Skills: Graph NetworksSkills: Graph Networks
+
+edX logo
+Analyzing Data with PythonAnalyzing Data with Python
+edXedX Issued Jun 2021Issued Jun 2021
+
+    Show credential https://www.credly.com/badges/02bbb42d-4b42-4948-9de4-3f56f654d54a?source=linked_in_profile
+        Skills: Optimization Techniques · Python (Programming Language) · Deep Learning · Optimization · Artificial Neural NetworksSkills: Optimization Techniques · Python (Programming Language) · Deep Learning · Optimization · Artificial Neural Networks
+
+edX logo
+Python EssentialsPython Essentials
+edXedX Issued Jun 2021Issued Jun 2021
+
+    Show credential https://www.datacamp.com/statement-of-accomplishment/course/703327a3425bb4e9f4f2e6c89b738313ef983403
+        Skills: Optimization Techniques · Python (Programming Language) · Deep Learning · Artificial Neural NetworksSkills: Optimization Techniques · Python (Programming Language) · Deep Learning · Artificial Neural Networks
+
+Harvard University logo
+Using Python for ResearchUsing Python for Research
+Harvard UniversityHarvard University Issued Jun 2017Issued Jun 2017
+
+        Skills: Optimization Techniques · Python (Programming Language)Skills: Optimization Techniques · Python (Programming Language)
+
+DataCamp logo
+Intro to Python for Data Science CourseIntro to Python for Data Science Course
+DataCampDataCamp Credential ID #2,785,175Credential ID #2,785,175
+
+    Show credential https://www.datacamp.com/statement-of-accomplishment/course/703327a3425bb4e9f4f2e6c89b738313ef983403
+        Skills: Python (Programming Language)Skills: Python (Programming Language)
+
+Python DataScience ToolBox (Part 2)
+Python DataScience ToolBox (Part 2)Python DataScience ToolBox (Part 2)
+
+DataCamp logo
+Python for DataSciencePython for DataScience
+DataCampDataCamp
+
+        Skills: Optimization Techniques · Optimization
+```
+
+Services & Reviews
+```
+OverviewOverview
+
+Helping founders define where AI actually makes sense in their product, avoid over-engineering, and create a clear AI roadmap aligned with business goals.
+Best for: ...
+See more
+4.8 out of 5 (
+8 reviews
+)
+
+AvailabilityAvailability
+
+Remote or in personRemote or in person (Lahore)(Lahore)
+
+PricingPricing
+
+Contact for pricingContact for pricing
+Services providedServices provided
+
+    Business Consulting
+    Educational Consulting
+    IT Consulting
+    Career Development Coaching
+    Corporate Training
+    Executive Coaching
+    Interview Preparation
+
+MediaMedia
+
+AI consulting & Strategy for startups
+
+TF consulting
+
+Helping founders define where AI actually makes sense in their product, avoid over-engineering, an ...
+See more
+Reviews
+4.8 out of 5
+(8 reviews)
+How are ratings calculated?
+Rating breakdown
+
+    Project satisfaction 4.9
+    Knowledge 4.9
+    Communication 4.9
+    Timeliness 4.8
+
+Inam Fareed
+Inam FareedInam Fareed
+2nd · 2nd
+CRM Developer | Full Stack DeveloperCRM Developer | Full Stack Developer
+
+    Business Consulting
+
+5.0 · January 28, 2026January 28, 2026
+My project with Tayaba was a great experience. She was professional, reliable, and delivered quality work on time. Communication was clear throughout the project.
+Umer Aziz
+Umer AzizUmer Aziz
+1st · 1st
+ServiceNow Developer | ITSM, CSM, FSM, GRC & Performance Analytics |GenAI, ML, NLP, CV | Superior University ’26ServiceNow Developer | ITSM, CSM, FSM, GRC & Performance Analytics |GenAI, ML, NLP, CV | Superior University ’26
+
+    Business Consulting
+
+4.0 · January 27, 2026January 27, 2026
+It was a great learning experience. Miss Tayyaba guided us at every step and was always there to help and clarify things. Really appreciated her support and guidance throughout.
+Faheem Bilal
+Faheem BilalFaheem Bilal
+2nd · 2nd
+🚀 Full Stack Developer | Laravel Specialist🚀 Full Stack Developer | Laravel Specialist
+
+    Business Consulting
+
+5.0 · January 27, 2026January 27, 2026
+Miss Tayyaba is an outstanding mentor with deep experience in project-based learning and startup guidance. Their practical insights, real-world examples, and continuous support make complex concepts easy to understand and apply. Highly recommended for anyone serious about building projects or startups.
+Mian Asad Ali is hiring
+Mian Asad AliMian Asad Ali
+2nd · 2nd
+CEO @ Appsians | $5 Million Annual Revenue | Custom Software & SaaS Product Development | Dedicated Dev Teams | For Startups, SMEs & B2B Companies | Open to Tech PartnershipsCEO @ Appsians | $5 Million Annual Revenue | Custom Software & SaaS Product Development | Dedicated Dev Teams | For Startups, SMEs & B2B Companies | Open to Tech Partnerships
+
+    Business Consulting
+
+5.0 · January 27, 2026January 27, 2026
+Tayyaba provided excellent business consulting support. She was highly helpful, structured in her approach, and delivered practical insights that added real value.
+Imran Shahzad
+Imran ShahzadImran Shahzad
+2nd · 2nd
+Data Engineer | Agentic AI & RAG System | Building Real-Time Data Pipelines, ETL/ELT Systems & AI-Powered Analytics | Python • SQL • Kafka • PostgreSQL • AWS • LangChain • Qdrant | Autonomous AI SystemsData Engineer | Agentic AI & RAG System | Building Real-Time Data Pipelines, ETL/ELT Systems & AI-Powered Analytics | Python • SQL • Kafka • PostgreSQL • AWS • LangChain • Qdrant | Autonomous AI Systems
+
+    Business Consulting
+
+5.0 · January 27, 2026January 27, 2026
+It was a great experience with Tayyaba she was dedicated.
+Abdul Haseeb is hiring
+Abdul HaseebAbdul Haseeb
+2nd · 2nd
+Helping Coaching and consultants to save their 100+ Hours/Month and book 20+ Appointments per Month Using Pakistan’s 1st AI LinkedIn Appointment Machine Without Paying Monthly Marketing Cost | Founder at AppointifyHelping Coaching and consultants to save their 100+ Hours/Month and book 20+ Appointments per Month Using Pakistan’s 1st AI LinkedIn Appointment Machine Without Paying Monthly Marketing Cost | Founder at Appointify
+
+    Business Consulting
+
+5.0 · January 27, 2026January 27, 2026
+The project with Tayyaba has been a great experience. She is actively helping me scale my startup and offers insightful consultation that actually works. Highly supportive and knowledgeable. Fully Recommended
+Mansab Ali is open to work
+Mansab AliMansab Ali
+2nd · 2nd
+Python Developer | Building with Django, Data Science & AI | Seeking to Develop Data-Driven Solutions for Real-World Problems | Section Leader @ Code in Place |Python Developer | Building with Django, Data Science & AI | Seeking to Develop Data-Driven Solutions for Real-World Problems | Section Leader @ Code in Place |
+
+    Business Consulting
+
+5.0 · January 27, 2026January 27, 2026
+Ma'am Tayyaba, your contributions to the Softweb Planet project have been invaluable. We deeply appreciate your constant guidance, insightful feedback, and helping hand at every stage. Your support truly makes a significant difference to our progress and confidence.
+Muhammad Ali
+Muhammad AliMuhammad Ali
+1st · 1st
+Tech Entrepreneur | Full-Stack Developer (MERN & React Native) | Business Consultant | Founder & CEO @ Ascode Solutions | Turning Code into Scalable GrowthTech Entrepreneur | Full-Stack Developer (MERN & React Native) | Business Consultant | Founder & CEO @ Ascode Solutions | Turning Code into Scalable Growth
+
+    Business Consulting
+
+4.8 · January 26, 2026January 26, 2026
+it was an absolute honour working with Mrs Tayyaba. she is a pure tech deva, her professional and personal advices help me a lot in my life and career
+```
+
+
+ Contact Info
+Tayyaba’s Profile
+linkedin.com/in/tayyaba-farhat
+Phone
+
+    03367307579 (Mobile)
+
+Email
+tayyaba.farhat31@gmail.com
+Connected
+May 14, 2022
+
+
+Tayyaba Farhat
+1st degree connection 1st
+Founder @ TF Consulting | AI & Incubation Consultant | Helping Startups & Researchers Build Practical AI Solutions | 100+ Startups | 1000+ Students | 5+ Publications
+
+
+AboutAbout
+I help 𝘀𝘁𝗮𝗿𝘁𝘂𝗽𝘀, 𝗶𝗻𝗰𝘂𝗯𝗮𝘁𝗼𝗿𝘀, 𝗮𝗻𝗱 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵𝗲𝗿𝘀 turn ideas and 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗶𝗻𝘁𝗼 𝗽𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹, 𝘀𝗰𝗮𝗹𝗮𝗯𝗹𝗲 𝗔𝗜 𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻𝘀, without over-engineering or wasting resources.
+Over the years, I’ve worked at the intersection of AI, education, research, and incubation, helping teams move from confusion to clarity.
+Credibility in numbers:
+🚀 𝟭𝟬𝟬+ 𝘀𝘁𝗮𝗿𝘁𝘂𝗽𝘀 supported through incubation, mentoring & strategy
+🎓 𝟭𝟬𝟬𝟬+ 𝘀𝘁𝘂𝗱𝗲𝗻𝘁𝘀 𝘁𝗿𝗮𝗶𝗻𝗲𝗱 in AI, Machine Learning & programming
+📄 𝟱+ 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗽𝘂𝗯𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 in AI & applied machine learning
+🧠 Hands-on experience in medical AI & real-world ML systems
+🏢 𝗦𝗲𝗻𝗶𝗼𝗿 𝗠𝗮𝗻𝗮𝗴𝗲𝗿 & 𝗜𝗻𝗰𝘂𝗯𝗮𝘁𝗶𝗼𝗻 𝗟𝗲𝗮𝗱 𝗮𝘁 𝗜𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝗼𝗻 𝗗𝗶𝘀𝘁𝗿𝗶𝗰𝘁 𝟵𝟮
+𝙒𝙝𝙖𝙩 𝙄 𝙝𝙚𝙡𝙥 𝙬𝙞𝙩𝙝:
+ 1. AI strategy & roadmap (what to build vs what not to build)
+ 2. Research-to-product translation
+ 3. Incubation & accelerator program design
+ 4. Founder & researcher mentorship
+💬 𝗜 𝗼𝗳𝗳𝗲𝗿 𝗽𝗮𝗶𝗱 𝗰𝗼𝗻𝘀𝘂𝗹𝘁𝗮𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝗳𝗼𝘂𝗻𝗱𝗲𝗿𝘀, 𝗶𝗻𝗰𝘂𝗯𝗮𝘁𝗼𝗿𝘀, 𝗮𝗻𝗱 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵𝗲𝗿𝘀 𝘄𝗵𝗼 𝘄𝗮𝗻𝘁 𝗰𝗹𝗮𝗿𝗶𝘁𝘆 𝗯𝗲𝗳𝗼𝗿𝗲 𝗲𝘅𝗲𝗰𝘂𝘁𝗶𝗼𝗻.
+👉 DM me “𝗖𝗢𝗡𝗦𝗨𝗟𝗧” to get started.
+
+
+
+Experience
+```
+    Superior University logo
+    Senior ManagerSenior Manager
+    Superior University · Full-timeSuperior University · Full-time Sep 2024 - Present · 1 yr 5 mosSep 2024 to Present · 1 yr 5 mos On-siteOn-site
+            Incubators, Technology Incubation and +10 skills
+    Superior University Lahore logo
+    Superior University LahoreSuperior University Lahore
+    8 yrs 11 mos8 yrs 11 mos
+        Sr. Lecturer of Software EngineeringSr. Lecturer of Software Engineering
+        Full-timeFull-time Jan 2020 - Sep 2024 · 4 yrs 9 mosJan 2020 to Sep 2024 · 4 yrs 9 mos Raiwind Road LahoreRaiwind Road Lahore
+                ->Supervising FYP of BSCS student's group
+                -> Advisor of IEEE Chapter WIE(Women in Engineering)
+                ->Teaching Database System, Data Structure & Algorithms
+                ->Supervising FYP of BSCS student's group -> Advisor of IEEE Chapter WIE(Women in Engineering) ->Teaching Database System, Data Structure & Algorithms 
+                Coaching, Optimization and +24 skills
+        Lecturer of Computer ScienceLecturer of Computer Science
+        Nov 2015 - Feb 2020 · 4 yrs 4 mosNov 2015 to Feb 2020 · 4 yrs 4 mos
+                Deep Learning, Training Needs Analysis and +7 skills
+    Head Of Training And Development
+    Head Of Training And DevelopmentHead Of Training And Development
+    Department of Computer Science and Information TechnologyDepartment of Computer Science and Information Technology Sep 2017 - Sep 2024 · 7 yrs 1 moSep 2017 to Sep 2024 · 7 yrs 1 mo Superior UniversitySuperior University
+            Organize Training Sessions for Faculty and Students to improve their Skill setOrganize Training Sessions for Faculty and Students to improve their Skill set
+            Coaching, Training Needs Analysis and +11 skills
+```
+
+
+Recommendations
+Recommend Tayyaba
+
+    Muhammad Ali
+    Muhammad AliMuhammad Ali
+    · 2ndSecond degree connection
+    Lead SQA Automation Engineer | Playwright, Selenium, Cypress | CI/CD | API & Performance Testing | C#, Java, JS, TSLead SQA Automation Engineer | Playwright, Selenium, Cypress | CI/CD | API & Performance Testing | C#, Java, JS, TS July 18, 2024, Muhammad worked with Tayyaba but on different teamsJuly 18, 2024, Muhammad worked with Tayyaba but on different teams
+            I took an Advance Database and Data Science course with Professor Tayyab Farhat at Superior University Lahore in 2016. her passion for the Subject was contagious, and their ability to explain complex topics clearly and engagingly made the learning process enjoyable and effective. I highly recommend Tayyaba, and if you ever get a chance to work with her you will know what I mean.I took an Advance Database and Data Science course with Professor Tayyab Farhat at Superior University Lahore in 2016. her passion for the Subject was contagious, and their ability to explain complex topics clearly and engagingly made the learning process enjoyable and effective. I highly recommend Tayyaba, and if you ever get a chance to work with her you will know what I mean.
+    Mian Asad Ali is hiring
+    Mian Asad AliMian Asad Ali
+    · 2ndSecond degree connection
+    CEO @ Appsians | $5 Million Annual Revenue | Custom Software & SaaS Product Development | Dedicated Dev Teams | For Startups, SMEs & B2B Companies | Open to Tech PartnershipsCEO @ Appsians | $5 Million Annual Revenue | Custom Software & SaaS Product Development | Dedicated Dev Teams | For Startups, SMEs & B2B Companies | Open to Tech Partnerships July 10, 2024, Mian worked with Tayyaba but on different teamsJuly 10, 2024, Mian worked with Tayyaba but on different teams
+            I had the privilege of working alongside on several projects with Miss Tayyaba. Not only is extremely skilled in Data Sciences and Machine Learning, but also has a knack for clear communication and team collaboration. She always brings a positive attitude to the table and has an uncanny ability to stay highly focused and organized. Any company would be lucky to have her!

@@ -4,7 +4,6 @@ import {
   ChevronDown,
   Linkedin,
 } from "lucide-react";
-import TayyabaFarhat from "../assets/tf.jpeg";
 
 const skills = [
   "Artificial Intelligence",
@@ -24,30 +23,36 @@ const skills = [
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
+      {/* Animated Background Gradient Mesh */}
       <div className="absolute inset-0">
-        <img
-          src="/hero-bg.jpg"
-          alt="Background"
-          className="w-full h-full object-cover opacity-40"
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-surface" />
+
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-glow" />
+        <div
+          className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-secondary-foreground/10 rounded-full blur-3xl"
+          style={{ animation: 'pulse-glow 4s ease-in-out infinite reverse' }}
         />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-highlight/5 rounded-full blur-3xl animate-pulse" />
+
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
       </div>
 
-      {/* Floating dots */}
+      {/* Floating dots with enhanced animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(30)].map((_, i) => (
+        {[...Array(40)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+            className="absolute rounded-full opacity-60"
             style={{
-              backgroundColor: "#20B2A6",
+              width: `${Math.random() * 4 + 1}px`,
+              height: `${Math.random() * 4 + 1}px`,
+              backgroundColor: i % 3 === 0 ? "#0EA5E9" : i % 3 === 1 ? "#38BDF8" : "#F59E0B",
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${
-                15 + Math.random() * 20
-              }s ease-in-out infinite`,
+              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
               animationDelay: `${Math.random() * 5}s`,
+              filter: 'blur(1px)',
             }}
           />
         ))}
@@ -133,28 +138,45 @@ export const Hero = () => {
           {/* Right */}
           <div className="relative">
             <div className="relative max-w-md mx-auto">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
-              <div className="relative glass rounded-3xl p-2 glow-border">
-                <img
-                  src={TayyabaFarhat}
-                  alt="Tayyaba Farhat"
-                  className="w-full aspect-[4/5] object-cover rounded-2xl"
-                />
+              {/* Animated glow background */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-secondary-foreground/20 to-highlight/20 blur-2xl animate-pulse-glow" />
 
-                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+              {/* Main card with shimmer */}
+              <div className="relative glass rounded-3xl p-2 glow-border group">
+                <div className="absolute inset-0 shimmer-effect animate-shimmer rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                <div className="relative w-full aspect-[4/5] rounded-2xl bg-gradient-to-br from-primary/10 via-background to-secondary/10 flex items-center justify-center border border-primary/20 overflow-hidden">
+                  {/* Background pattern */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute inset-0" style={{
+                      backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(14, 165, 233, 0.3) 1px, transparent 0)',
+                      backgroundSize: '40px 40px'
+                    }} />
+                  </div>
+
+                  <span className="relative text-9xl font-bold bg-gradient-to-br from-primary via-secondary-foreground to-highlight bg-clip-text text-transparent select-none">
+                    TF
+                  </span>
+                </div>
+
+                {/* Floating badges with enhanced styling */}
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-5 py-3 animate-float border border-primary/20 backdrop-blur-xl">
                   <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
+                    <div className="relative">
+                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                      <div className="absolute inset-0 w-3 h-3 bg-green-500 rounded-full animate-ping" />
+                    </div>
+                    <span className="text-sm font-medium bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                       PhD Scholar & AI Researcher
                     </span>
                   </div>
                 </div>
 
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">
+                <div className="absolute -top-4 -left-4 glass rounded-xl px-5 py-3 animate-float animation-delay-500 border border-highlight/20 backdrop-blur-xl">
+                  <div className="text-3xl font-bold text-transparent bg-gradient-to-br from-primary to-secondary-foreground bg-clip-text">
                     10+
                   </div>
-                  <div className="text-xs text-muted-foreground">
+                  <div className="text-xs text-muted-foreground font-medium">
                     Years Experience
                   </div>
                 </div>

@@ -3,12 +3,20 @@ import {
   Send,
   GraduationCap,
   Linkedin,
+  Phone,
 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const contactInfo = [
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+92 336 7307579",
+    href: "tel:+923367307579",
+    newTab: false,
+  },
   {
     icon: Mail,
     label: "Email",
@@ -25,9 +33,9 @@ const contactInfo = [
   },
   {
     icon: GraduationCap,
-    label: "Google Scholar",
+    label: "ResearchGate",
     value: "View Research Profile",
-    href: "https://scholar.google.com/citations?hl=en&user=sbJdyucAAAAJ",
+    href: "https://www.researchgate.net/profile/Tayyaba-Farhat",
     newTab: true,
   },
 ];
@@ -214,11 +222,10 @@ export const Contact = () => {
 
               {submitStatus.type && (
                 <div
-                  className={`p-4 rounded-xl text-sm ${
-                    submitStatus.type === "success"
-                      ? "bg-green-500/10 text-green-400"
-                      : "bg-red-500/10 text-red-400"
-                  }`}
+                  className={`p-4 rounded-xl text-sm ${submitStatus.type === "success"
+                    ? "bg-green-500/10 text-green-400"
+                    : "bg-red-500/10 text-red-400"
+                    }`}
                 >
                   {submitStatus.message}
                 </div>

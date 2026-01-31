@@ -6,11 +6,12 @@ const skills = [
   { name: "Python", icon: Code, level: 100 },
   { name: "Machine Learning", icon: Cpu, level: 100 },
   { name: "Deep Learning", icon: Cpu, level: 100 },
-  { name: "Data Analysis", icon: Database, level: 100 },
-  { name: "Web Development", icon: Layout, level: 100 },
-  { name: "MLOps & Deployment", icon: Server, level: 100 },
-  { name: "AI Research", icon: Cpu, level: 100 },
+  { name: "Medical Imaging", icon: Cpu, level: 95 },
+  { name: "Data Engineering", icon: Database, level: 95 },
   { name: "SQL & Databases", icon: Database, level: 100 },
+  { name: "Startup Incubation", icon: Server, level: 100 },
+  { name: "Mentorship", icon: Layout, level: 100 },
+  { name: "Digital Marketing", icon: Layout, level: 90 },
 ];
 
 /* ---------------- MOTION VARIANTS ---------------- */
@@ -84,37 +85,51 @@ export const Skills = () => {
               key={index}
               variants={card}
               whileHover={{
-                y: -6,
-                boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+                y: -10,
+                scale: 1.05,
               }}
-              className="glass p-6 rounded-3xl border border-primary/30 transition-all"
+              className="group premium-card p-6 rounded-3xl border border-primary/20 transition-all relative isolate"
             >
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary-foreground/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-[-1]" />
+
               {/* ICON + TITLE */}
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-5">
                 <motion.div
-                  className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4"
-                  whileHover={{ scale: 1.15, rotate: 8 }}
+                  className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary-foreground/10 flex items-center justify-center mr-4 relative overflow-hidden"
+                  whileHover={{ scale: 1.2, rotate: 12 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <skill.icon className="w-6 h-6 text-primary" />
+                  <div className="absolute inset-0 bg-primary/20 blur-lg group-hover:bg-primary/40 transition-colors duration-300" />
+                  <skill.icon className="relative w-6 h-6 text-primary group-hover:text-secondary-foreground transition-colors duration-300" />
                 </motion.div>
 
-                <div className="font-semibold text-lg">{skill.name}</div>
+                <div className="font-bold text-base group-hover:text-primary transition-colors duration-300">{skill.name}</div>
               </div>
 
-              {/* PROGRESS BAR */}
-              <div className="w-full bg-primary/10 h-3 rounded-xl overflow-hidden">
+              {/* PROGRESS BAR with glow */}
+              <div className="relative w-full bg-primary/5 h-2.5 rounded-full overflow-hidden border border-primary/10">
                 <motion.div
-                  className="bg-primary h-3 rounded-xl"
+                  className="relative h-2.5 rounded-full bg-gradient-to-r from-primary via-secondary-foreground to-primary"
+                  style={{ backgroundSize: '200% 100%' }}
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.level}%` }}
                   viewport={{ once: true }}
-                  transition={{ duration: 1.2, ease: "easeOut" }}
-                />
+                  transition={{
+                    width: { duration: 1.5, ease: "easeOut", delay: index * 0.1 },
+                    backgroundPosition: { duration: 3, repeat: Infinity, ease: "linear" }
+                  }}
+                  animate={{
+                    backgroundPosition: ['0% 0%', '100% 0%'],
+                  }}
+                >
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
+                </motion.div>
               </div>
 
-              <div className="text-xs text-muted-foreground mt-1">
-                {skill.level}%
+              <div className="text-xs text-muted-foreground mt-2 font-medium group-hover:text-primary transition-colors duration-300">
+                Proficiency: {skill.level}%
               </div>
             </motion.div>
           ))}

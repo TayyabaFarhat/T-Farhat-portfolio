@@ -4,22 +4,44 @@ import { motion } from "framer-motion";
 
 const endorsements = [
   {
-    name: "Muhammad Ali",
-    title:
-      "Staff SQA Automation Engineer | Playwright, Selenium, Cypress | CI/CD | API & Performance Testing",
-    date: "July 18, 2024",
-    context: "Worked with Tayyaba but on different teams",
+    name: "Mian Asad Ali",
+    title: "CEO @ Appsians | $5M Revenue",
+    date: "Jan 27, 2026",
+    context: "Client",
     quote:
-      "I took an Advance Database and Data Science course with Professor Tayyab Farhat at Superior University Lahore in 2016. Her passion for the subject was contagious, and her ability to explain complex topics clearly and engagingly made the learning process enjoyable and effective. I highly recommend Tayyaba.",
+      "Tayyaba provided excellent business consulting support. She was highly helpful, structured in her approach, and delivered practical insights that added real value.",
   },
   {
-    name: "Mian Asad Ali",
-    title:
-      "CEO @ Appsians | $5M Annual Revenue | Custom Software & SaaS Product Development",
-    date: "July 10, 2024",
-    context: "Worked with Tayyaba but on different teams",
+    name: "Inam Fareed",
+    title: "CRM Developer | Full Stack Developer",
+    date: "Jan 28, 2026",
+    context: "Client",
     quote:
-      "I had the privilege of working alongside Miss Tayyaba on several projects. Not only is she extremely skilled in Data Sciences and Machine Learning, but she also has a knack for clear communication and team collaboration. Any company would be lucky to have her!",
+      "My project with Tayaba was a great experience. She was professional, reliable, and delivered quality work on time. Communication was clear throughout the project.",
+  },
+  {
+    name: "Faheem Bilal",
+    title: "Full Stack Developer | Laravel Specialist",
+    date: "Jan 27, 2026",
+    context: "Mentee",
+    quote:
+      "Miss Tayyaba is an outstanding mentor with deep experience in project-based learning and startup guidance. Their practical insights make complex concepts easy to understand.",
+  },
+  {
+    name: "Muhammad Ali",
+    title: "Founder & CEO @ Ascode Solutions",
+    date: "Jan 26, 2026",
+    context: "Former Student",
+    quote:
+      "It was an absolute honour working with Mrs Tayyaba. She is a pure tech diva, her professional and personal advice helped me a lot in my life and career.",
+  },
+  {
+    name: "Abdul Haseeb",
+    title: "Founder at Appointify",
+    date: "Jan 27, 2026",
+    context: "Client",
+    quote:
+      "She is actively helping me scale my startup and offers insightful consultation that actually works. Highly supportive and knowledgeable. Fully Recommended.",
   },
 ];
 
@@ -94,39 +116,37 @@ export const Endorsements = () => {
             <motion.div
               key={index}
               variants={card}
-              whileHover={{
-                y: -8,
-                boxShadow: "0 25px 50px rgba(0,0,0,0.25)",
-              }}
-              transition={{ type: "spring", stiffness: 250 }}
-              className="glass p-8 rounded-3xl border border-primary/30"
+              className="premium-card p-8 rounded-3xl relative group"
             >
+              {/* Internal Gradient blob */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
               {/* HEADER */}
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-6 relative z-10">
                 <motion.div
-                  className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4"
+                  className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mr-4 border border-primary/20"
                   whileHover={{ scale: 1.15, rotate: 6 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <User className="w-6 h-6 text-primary" />
+                  <User className="w-7 h-7 text-primary" />
                 </motion.div>
 
                 <div>
-                  <div className="font-semibold text-lg">
+                  <div className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
                     {endorsement.name}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-xs font-medium text-primary mb-0.5 uppercase tracking-wide">
                     {endorsement.title}
                   </div>
-                  <div className="text-xs text-muted-foreground mt-1">
-                    {endorsement.date} · {endorsement.context}
+                  <div className="text-[10px] text-muted-foreground/60">
+                    {endorsement.date} • {endorsement.context}
                   </div>
                 </div>
               </div>
 
               {/* QUOTE */}
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                “{endorsement.quote}”
+              <p className="text-muted-foreground text-[15px] leading-relaxed relative z-10 italic">
+                "{endorsement.quote}"
               </p>
             </motion.div>
           ))}

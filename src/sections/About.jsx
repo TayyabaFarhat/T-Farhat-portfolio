@@ -78,23 +78,24 @@ export const About = () => {
               </span>
             </h2>
 
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                I am <strong>Tayyaba Farhat</strong>, a PhD Scholar in Deep
-                Learning with more than 10 years of academic and professional
-                experience in computer science and software engineering.
-              </p>
-              <p>
-                Currently serving as a Senior Manager at Superior University, I
-                actively contribute to technology incubation, faculty
-                development, and research-driven innovation.
-              </p>
-              <p>
-                My teaching and research interests include Artificial
-                Intelligence, Database Systems, Data Structures & Algorithms,
-                and applied machine learning for real-world problems.
-              </p>
-            </div>
+            <p>
+              I help <strong>startups, incubators, and researchers</strong> turn ideas and research into practical, scalable <strong>AI solutions</strong>, without over-engineering or wasting resources.
+            </p>
+            <p>
+              Over the years, I’ve worked at the intersection of AI, education, research, and incubation, helping teams move from confusion to clarity.
+            </p>
+            <p className="font-medium text-foreground">
+              Credibility in numbers:
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>🚀 <strong>100+ startups</strong> supported through incubation, mentoring & strategy</li>
+              <li>🎓 <strong>1000+ students</strong> trained in AI, Machine Learning & programming</li>
+              <li>📄 <strong>5+ research publications</strong> in AI & applied machine learning</li>
+              <li>🧠 Hands-on experience in medical AI & real-world ML systems</li>
+            </ul>
+            <p>
+              Currently serving as a <strong>Senior Manager & Incubation Lead</strong> at Innovation District 92.
+            </p>
 
             <motion.div
               className="glass rounded-2xl p-6 glow-border"
