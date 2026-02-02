@@ -1,139 +1,95 @@
-import { Brain, Lightbulb, GraduationCap, Users } from "lucide-react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useState, useEffect } from "react";
-
-const highlights = [
-  {
-    icon: GraduationCap,
-    title: "Academic Leadership",
-    description:
-      "Over a decade of experience in higher education, teaching and mentoring future engineers.",
-  },
-  {
-    icon: Brain,
-    title: "AI Research",
-    description:
-      "Specialized in Deep Learning, Computer Vision, and NLP with international publications.",
-  },
-  {
-    icon: Users,
-    title: "Mentorship",
-    description:
-      "Supervised FYPs, advised IEEE WIE chapter, and guided students toward innovation.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Training & Development",
-    description:
-      "Led faculty and student training programs to enhance technical and research skills.",
-  },
-];
+import { profile } from "@/constants/data";
+import { Brain, Rocket, Users, Award, Globe, Code2 } from "lucide-react";
+import { motion } from "framer-motion";
+import { MagicCard } from "@/components/MagicCard";
 
 export const About = () => {
-  const [offsetY, setOffsetY] = useState(0);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleScroll = () => setOffsetY(window.scrollY * 0.15);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleMouseMove = (e) => setMousePos({ x: e.clientX, y: e.clientY });
-
   return (
-    <section
-      id="about"
-      className="py-32 relative overflow-hidden"
-      onMouseMove={handleMouseMove}
-    >
-      {/* Background Blobs */}
-      <motion.div
-        className="absolute top-1/4 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-primary/10 rounded-full blur-3xl"
-        style={{ y: offsetY }}
-      />
-      <motion.div
-        className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 h-52 sm:h-64 bg-highlight/10 rounded-full blur-3xl"
-        style={{ y: -offsetY }}
-      />
-
+    <section id="about" className="py-20 relative overflow-hidden bg-background">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left */}
-          <motion.div
-            className="space-y-8"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
-              About Me
-            </span>
 
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight text-secondary-foreground">
-              Empowering minds through{" "}
-              <span className="font-serif italic font-normal text-white">
-                research & education.
-              </span>
-            </h2>
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight">
+            Who <span className="text-gradient">I Am</span>
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            {profile.headline}
+          </p>
+        </div>
 
-            <p>
-              I help <strong>startups, incubators, and researchers</strong> turn ideas and research into practical, scalable <strong>AI solutions</strong>, without over-engineering or wasting resources.
-            </p>
-            <p>
-              Over the years, I’ve worked at the intersection of AI, education, research, and incubation, helping teams move from confusion to clarity.
-            </p>
-            <p className="font-medium text-foreground">
-              Credibility in numbers:
-            </p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>🚀 <strong>100+ startups</strong> supported through incubation, mentoring & strategy</li>
-              <li>🎓 <strong>1000+ students</strong> trained in AI, Machine Learning & programming</li>
-              <li>📄 <strong>5+ research publications</strong> in AI & applied machine learning</li>
-              <li>🧠 Hands-on experience in medical AI & real-world ML systems</li>
-            </ul>
-            <p>
-              Currently serving as a <strong>Senior Manager & Incubation Lead</strong> at Innovation District 92.
-            </p>
+        {/* Bento Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
 
-            <motion.div
-              className="glass rounded-2xl p-6 glow-border"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <p className="text-lg font-medium italic text-foreground">
-                "I believe education and research together have the power to
-                shape intelligent systems — and responsible future leaders."
+          {/* Main Bio Card */}
+          <MagicCard className="md:col-span-2 md:row-span-2 p-8 md:p-10 flex flex-col justify-between group">
+            <div className="space-y-6">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <Brain className="w-7 h-7" />
+              </div>
+              <h3 className="text-3xl font-bold text-white">
+                Designing the Future of AI
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                {profile.about}
               </p>
-            </motion.div>
-          </motion.div>
+            </div>
+            {/* Quick Stats inside the main card */}
+            <div className="pt-8 grid grid-cols-3 gap-4 border-t border-white/5 mt-8">
+              <div>
+                <div className="text-2xl font-black text-white">10+</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Years Exp.</div>
+              </div>
+              <div>
+                <div className="text-2xl font-black text-white">100+</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Projects</div>
+              </div>
+              <div>
+                <div className="text-2xl font-black text-white">50+</div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">Clients</div>
+              </div>
+            </div>
+          </MagicCard>
 
-          {/* Right */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {highlights.map((item, idx) => (
-              <motion.div
-                key={idx}
-                className="glass p-6 rounded-2xl cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.15)]"
-                style={{
-                  x: (mousePos.x - window.innerWidth / 2) * 0.015,
-                  y: (mousePos.y - window.innerHeight / 2) * 0.015,
-                }}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.15 }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
+          {/* Specialization / Area of Focus */}
+          <MagicCard className="p-8 flex flex-col justify-center space-y-4 group">
+            <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center border border-white/5 group-hover:bg-secondary group-hover:text-background transition-colors duration-300">
+              <Code2 className="w-6 h-6 text-secondary-foreground group-hover:text-inherit" />
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-white">Tech Stack</h4>
+              <p className="text-sm text-muted-foreground mt-2">
+                Specialized in Python, React, Tailwind, and Machine Learning frameworks.
+              </p>
+            </div>
+          </MagicCard>
+
+          {/* Another Stat / Feature */}
+          <MagicCard className="p-8 flex flex-col justify-center space-y-4 group">
+            <div className="w-12 h-12 rounded-lg bg-highlight/10 flex items-center justify-center border border-white/5 group-hover:bg-highlight group-hover:text-black transition-colors duration-300">
+              <Rocket className="w-6 h-6 text-highlight group-hover:text-inherit" />
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-white">Startups</h4>
+              <p className="text-sm text-muted-foreground mt-2">
+                Helping early-stage startups scale their technical infrastructure.
+              </p>
+            </div>
+          </MagicCard>
+
+          {/* Global Reach */}
+          <MagicCard className="md:col-span-1 p-8 flex flex-col justify-center space-y-4 group">
+            <div className="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center border border-white/5 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">
+              <Globe className="w-6 h-6 text-emerald-500 group-hover:text-inherit" />
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-white">Global Reach</h4>
+              <p className="text-sm text-muted-foreground mt-2">
+                Collaborating with clients worldwide to deliver impactful solutions.
+              </p>
+            </div>
+          </MagicCard>
+
         </div>
       </div>
     </section>

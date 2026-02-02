@@ -5,7 +5,6 @@ import { About } from "@/sections/About";
 import { Services } from "@/sections/Services";
 import { Projects } from "@/sections/Projects";
 import { Skills } from "@/sections/Skills";
-import { Endorsements } from "@/sections/Endorsements";
 import { Experience } from "@/sections/Experience";
 import { Contact } from "@/sections/Contact";
 import { Footer } from "@/layout/Footer";
@@ -18,25 +17,26 @@ import { Education } from "@/sections/Education";
 function App() {
   return (
     <div className="min-h-screen overflow-x-hidden relative">
-      {/* Interactive particle background */}
+      {/* Interactive premium background */}
       <InteractiveBackground />
 
       {/* Premium cursor glow */}
       <CursorGlow />
 
       <Navbar />
+
       <main>
         <Hero />
         <About />
         <Services />
-        <Skills />
-        <Endorsements />
+        <Experience />
         <Projects />
         <Education />
-        <Experience />
+        <Skills />
         <Testimonials />
         <Contact />
       </main>
+
       <Footer />
 
       {/* Scroll to top button */}

@@ -1,49 +1,17 @@
 import {
   Mail,
   Send,
-  GraduationCap,
   Linkedin,
   Phone,
+  MapPin,
+  ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/Button";
-import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useEffect, useState } from "react";
-
-const contactInfo = [
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+92 336 7307579",
-    href: "tel:+923367307579",
-    newTab: false,
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "tayyaba.farhat31@gmail.com",
-    href: "mailto:tayyaba.farhat31@gmail.com",
-    newTab: false,
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "tayyaba-farhat",
-    href: "https://www.linkedin.com/in/tayyaba-farhat/",
-    newTab: true,
-  },
-  {
-    icon: GraduationCap,
-    label: "ResearchGate",
-    value: "View Research Profile",
-    href: "https://www.researchgate.net/profile/Tayyaba-Farhat",
-    newTab: true,
-  },
-];
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { profile } from "@/constants/data";
 
 export const Contact = () => {
-  const fullText = "Get In Touch";
-  const [typedText, setTypedText] = useState("");
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,31 +23,6 @@ export const Contact = () => {
     message: "",
   });
 
-  /* Typed Text Effect */
-  useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      setTypedText(fullText.slice(0, index + 1));
-      index++;
-      if (index === fullText.length) clearInterval(interval);
-    }, 90);
-    return () => clearInterval(interval);
-  }, []);
-
-  /* Scroll-based parallax for blobs */
-  const [offsetY, setOffsetY] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => setOffsetY(window.scrollY * 0.2);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  /* Cursor magnetic effect */
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const handleMouseMove = (e) =>
-    setMousePos({ x: e.clientX, y: e.clientY });
-
-  /* Form submission */
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -91,7 +34,6 @@ export const Contact = () => {
       formBody.append("name", formData.name);
       formBody.append("email", formData.email);
       formBody.append("message", formData.message);
-      formBody.append("subject", "New Contact Form Submission");
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -103,16 +45,16 @@ export const Contact = () => {
       if (data.success) {
         setSubmitStatus({
           type: "success",
-          message: "Message sent successfully! I'll get back to you soon.",
+          message: "Thank you! I'll be in touch shortly.",
         });
         setFormData({ name: "", email: "", message: "" });
       } else {
-        throw new Error("Submission failed");
+        throw new Error("Failed");
       }
     } catch {
       setSubmitStatus({
         type: "error",
-        message: "Failed to send message. Please try again later.",
+        message: "Something went wrong. Please try again.",
       });
     } finally {
       setIsLoading(false);
@@ -120,173 +62,139 @@ export const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="py-20 sm:py-32 relative overflow-hidden"
-      onMouseMove={handleMouseMove}
-    >
-      {/* Background Blobs */}
-      <motion.div
-        className="absolute top-1/4 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-primary/10 rounded-full blur-3xl"
-        style={{ y: offsetY }}
-      />
-      <motion.div
-        className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 h-52 sm:h-64 bg-highlight/10 rounded-full blur-3xl"
-        style={{ y: -offsetY }}
-      />
+    <section id="contact" className="py-32 relative overflow-hidden bg-background">
+      <div className="section-divider-top" />
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-20 items-start">
+          {/* Left Side - Info */}
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 text-primary font-bold tracking-widest text-xs uppercase px-4 py-1.5 rounded-full glass border border-primary/20">
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                Connectivity
+              </div>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight">Let's start a <br /><span className="text-gradient">conversation.</span></h2>
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-md">
+                Whether you're a startup founder, a researcher, or just looking to discuss AI, my door is always open.
+              </p>
+            </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        {/* Header */}
-        <motion.div
-          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase inline-flex items-center">
-            {typedText}
-            <span className="inline-block w-[1px] h-4 bg-secondary-foreground ml-1 animate-pulse" />
-          </span>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <a href={`mailto:${profile.contact.email}`} className="premium-card p-6 rounded-3xl border border-white/5 space-y-4 hover:border-primary/50 group">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-all duration-500">
+                  <Mail className="w-6 h-6 text-primary group-hover:text-white" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Email Me</div>
+                  <div className="text-sm font-bold truncate">{profile.contact.email}</div>
+                </div>
+              </a>
+              <a href={`tel:${profile.contact.phone}`} className="premium-card p-6 rounded-3xl border border-white/5 space-y-4 hover:border-highlight/50 group">
+                <div className="w-12 h-12 rounded-2xl bg-highlight/10 flex items-center justify-center group-hover:bg-highlight transition-all duration-500">
+                  <Phone className="w-6 h-6 text-highlight group-hover:text-white" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Call Me</div>
+                  <div className="text-sm font-bold">{profile.contact.phone}</div>
+                </div>
+              </a>
+              <a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer" className="premium-card p-6 rounded-3xl border border-white/5 space-y-4 hover:border-primary/50 group">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-all duration-500">
+                  <Linkedin className="w-6 h-6 text-primary group-hover:text-white" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest">LinkedIn</div>
+                  <div className="text-sm font-bold">Connect on LinkedIn</div>
+                </div>
+              </a>
+              <div className="premium-card p-6 rounded-3xl border border-white/5 space-y-4 group">
+                <div className="w-12 h-12 rounded-2xl bg-secondary/10 flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-secondary-foreground" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Location</div>
+                  <div className="text-sm font-bold">Lahore, Pakistan</div>
+                </div>
+              </div>
+            </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
-            Let's build{" "}
-            <span className="font-serif italic font-normal text-white">
-              something great.
-            </span>
-          </h2>
-          <p className="text-muted-foreground text-sm sm:text-base">
-            Have a project in mind? I'd love to hear about it. Send me a message and let's discuss how we can work together.
-          </p>
-        </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              className="glass p-8 rounded-[40px] border border-white/5 bg-gradient-to-br from-primary/10 to-transparent"
+            >
+              <h4 className="text-xl font-bold mb-2">Available for:</h4>
+              <ul className="space-y-2">
+                {["AI Strategy Consulting", "PhD Research Mentorship", "Startup Incubation Leadership", "Corporate AI Training"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
-          {/* Form */}
+          {/* Right Side - Form */}
           <motion.div
-            className="glass p-6 sm:p-8 rounded-3xl border border-primary/30"
-            style={{
-              x: (mousePos.x - window.innerWidth / 2) * 0.02,
-              y: (mousePos.y - window.innerHeight / 2) * 0.02,
-            }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="premium-card p-10 md:p-12 rounded-[48px] border border-white/10 shadow-2xl relative"
           >
-            <form className="space-y-5 sm:space-y-6" onSubmit={handleSubmit}>
-              <div>
-                <label className="block text-sm font-medium mb-2">Name</label>
+            <form className="space-y-8" onSubmit={handleSubmit}>
+              <div className="space-y-2">
+                <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground px-1">Full Name</label>
                 <input
                   required
                   value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  placeholder="Your name..."
-                  className="w-full px-4 py-3 rounded-xl border outline-none"
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  placeholder="John Doe"
+                  className="w-full bg-white/5 border border-white/5 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 focus:bg-white/10 transition-all text-white font-medium"
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+              <div className="space-y-2">
+                <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground px-1">Email Address</label>
                 <input
                   required
+                  type="email"
                   value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  placeholder="your@email.com"
-                  className="w-full px-4 py-3 rounded-xl border outline-none"
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  placeholder="john@example.com"
+                  className="w-full bg-white/5 border border-white/5 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 focus:bg-white/10 transition-all text-white font-medium"
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
+              <div className="space-y-2">
+                <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground px-1">Message</label>
                 <textarea
-                  rows={4}
                   required
+                  rows={5}
                   value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  placeholder="Your message..."
-                  className="w-full px-4 py-3 rounded-xl border outline-none resize-none"
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  placeholder="How can I help you?"
+                  className="w-full bg-white/5 border border-white/5 rounded-2xl px-6 py-4 outline-none focus:border-primary/50 focus:bg-white/10 transition-all text-white font-medium resize-none"
                 />
               </div>
 
-              <Button
-                className="w-full flex items-center justify-center gap-2"
+              <button
                 type="submit"
-                size="lg"
                 disabled={isLoading}
+                className="w-full h-16 bg-primary hover:bg-primary/90 text-white font-black text-lg rounded-2xl shadow-[0_20px_40px_-10px_rgba(56,189,248,0.3)] transition-all flex items-center justify-center gap-3 active:scale-[0.98] disabled:opacity-50"
               >
-                {isLoading ? "Sending..." : <>Send Message <Send className="w-5 h-5" /></>}
-              </Button>
+                {isLoading ? "Delivering..." : <>Send Message <Send className="w-5 h-5 shadow-glow" /></>}
+              </button>
 
               {submitStatus.type && (
-                <div
-                  className={`p-4 rounded-xl text-sm ${submitStatus.type === "success"
-                    ? "bg-green-500/10 text-green-400"
-                    : "bg-red-500/10 text-red-400"
-                    }`}
-                >
+                <div className={`text-center font-bold animate-fade-in ${submitStatus.type === "success" ? "text-green-400" : "text-red-400"}`}>
                   {submitStatus.message}
                 </div>
               )}
             </form>
-          </motion.div>
 
-          {/* Info */}
-          <motion.div
-            className="space-y-6"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <div
-              className="glass rounded-3xl p-6 sm:p-8"
-              style={{
-                x: (mousePos.x - window.innerWidth / 2) * 0.015,
-                y: (mousePos.y - window.innerHeight / 2) * 0.015,
-              }}
-            >
-              <h3 className="text-lg sm:text-xl font-semibold mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-4">
-                {contactInfo.map((item, i) => (
-                  <a
-                    key={i}
-                    href={item.href}
-                    target={item.newTab ? "_blank" : "_self"}
-                    rel={item.newTab ? "noopener noreferrer" : undefined}
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-all"
-                  >
-                    <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <item.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-muted-foreground">{item.label}</div>
-                      <div className="font-medium text-sm sm:text-base">{item.value}</div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div
-              className="glass rounded-3xl p-6 sm:p-8 border border-primary/30"
-              style={{
-                x: (mousePos.x - window.innerWidth / 2) * 0.015,
-                y: (mousePos.y - window.innerHeight / 2) * 0.015,
-              }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="font-medium">Currently Available</span>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects. Whether you need a full-time engineer or a freelance consultant, let's talk!
-              </p>
-            </div>
+            {/* Subtle background blob for the form */}
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
           </motion.div>
         </div>
       </div>

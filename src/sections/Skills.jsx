@@ -1,139 +1,159 @@
-// Skills.jsx
-import { Code, Cpu, Database, Server, Layout } from "lucide-react";
+import { Code, Cpu, Database, Brain, Rocket, Building, Users, Terminal, Sparkles, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Python", icon: Code, level: 100 },
-  { name: "Machine Learning", icon: Cpu, level: 100 },
-  { name: "Deep Learning", icon: Cpu, level: 100 },
-  { name: "Medical Imaging", icon: Cpu, level: 95 },
-  { name: "Data Engineering", icon: Database, level: 95 },
-  { name: "SQL & Databases", icon: Database, level: 100 },
-  { name: "Startup Incubation", icon: Server, level: 100 },
-  { name: "Mentorship", icon: Layout, level: 100 },
-  { name: "Digital Marketing", icon: Layout, level: 90 },
+  {
+    name: "Deep Learning",
+    category: "AI Core",
+    icon: Brain,
+    level: "Expert",
+    description: "Multi-modal architectures, XAI GAMI-Net & Hypernetworks.",
+    size: "large",
+    colorKey: "primary"
+  },
+  {
+    name: "Python",
+    category: "Development",
+    icon: Code,
+    level: "Expert",
+    description: "Scientific computing, ML pipelines & automation.",
+    size: "small",
+    colorKey: "highlight"
+  },
+  {
+    name: "Computer Vision",
+    category: "AI Core",
+    icon: Cpu,
+    level: "Advanced",
+    description: "Medical Image Analysis & Facial Recognition.",
+    size: "medium",
+    colorKey: "primary"
+  },
+  {
+    name: "Incubation Strategy",
+    category: "Business",
+    icon: Rocket,
+    level: "Expert",
+    description: "Scaling startups from idea to $5M+ revenue support.",
+    size: "large",
+    colorKey: "secondary"
+  },
+  {
+    name: "Data Engineering",
+    category: "Intelligence",
+    icon: Database,
+    level: "Advanced",
+    description: "ETL pipelines, SQL & predictive modeling trends.",
+    size: "small",
+    colorKey: "primary"
+  },
+  {
+    name: "NLP",
+    category: "AI Core",
+    icon: Terminal,
+    level: "Advanced",
+    description: "Sarcasm identification & temporal dependencies.",
+    size: "medium",
+    colorKey: "highlight"
+  }
 ];
 
-/* ---------------- MOTION VARIANTS ---------------- */
-
-const container = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.1,
-    },
+const colorVariants = {
+  primary: {
+    bg: "bg-primary",
+    bgLight: "bg-primary/10",
+    border: "border-primary/20",
+    text: "text-primary",
   },
-};
-
-const card = {
-  hidden: { opacity: 0, y: 30 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+  secondary: {
+    bg: "bg-secondary",
+    bgLight: "bg-secondary/10",
+    border: "border-secondary/20",
+    text: "text-secondary",
   },
+  highlight: {
+    bg: "bg-highlight",
+    bgLight: "bg-highlight/10",
+    border: "border-highlight/20",
+    text: "text-highlight",
+  }
 };
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-32 relative overflow-hidden">
-      {/* PARALLAX BACKGROUND BLOBS */}
-      <motion.div
-        className="absolute top-1/4 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-primary/5 rounded-full blur-3xl"
-        animate={{ y: [0, -40, 0], x: [0, 30, 0] }}
-        transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 h-52 sm:h-64 bg-highlight/5 rounded-full blur-3xl"
-        animate={{ y: [0, 30, 0], x: [0, -25, 0] }}
-        transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
-      />
+    <section id="skills" className="py-20 relative overflow-hidden bg-background">
+      {/* Smooth Blending Overlays */}
+      <div className="section-divider-top" />
+      <div className="section-divider-bottom" />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* HEADER */}
-        <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
-            My Skills
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
-            What I{" "}
-            <span className="font-serif italic font-normal text-white">
-              Excel At
-            </span>
-          </h2>
-          <p className="text-muted-foreground">
-            A combination of technical expertise and AI research skills.
+        <div className="text-center max-w-3xl mx-auto mb-20 space-y-4 text-reveal">
+          <div className="inline-flex items-center gap-2 text-primary font-bold tracking-widest text-xs uppercase px-4 py-1.5 rounded-full glass border border-primary/20">
+            <Sparkles className="w-3.5 h-3.5" />
+            The Toolbox
+          </div>
+          <h2 className="text-5xl md:text-6xl font-black tracking-tight tracking-tighter">My <span className="text-gradient">Core Tech Stack</span></h2>
+          <p className="text-lg text-muted-foreground">
+            A diverse arsenal spanning deep technical research and strategic ecosystem leadership.
           </p>
-        </motion.div>
+        </div>
 
-        {/* SKILLS GRID */}
-        <motion.div
-          className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              variants={card}
-              whileHover={{
-                y: -10,
-                scale: 1.05,
-              }}
-              className="group premium-card p-6 rounded-3xl border border-primary/20 transition-all relative isolate"
-            >
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary-foreground/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-[-1]" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[240px]">
+          {skills.map((skill, i) => {
+            const Icon = skill.icon;
+            const isLarge = skill.size === "large";
+            const isMedium = skill.size === "medium";
 
-              {/* ICON + TITLE */}
-              <div className="flex items-center mb-5">
-                <motion.div
-                  className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary-foreground/10 flex items-center justify-center mr-4 relative overflow-hidden"
-                  whileHover={{ scale: 1.2, rotate: 12 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <div className="absolute inset-0 bg-primary/20 blur-lg group-hover:bg-primary/40 transition-colors duration-300" />
-                  <skill.icon className="relative w-6 h-6 text-primary group-hover:text-secondary-foreground transition-colors duration-300" />
-                </motion.div>
+            // Get color classes from map
+            const colors = colorVariants[skill.colorKey] || colorVariants.primary;
 
-                <div className="font-bold text-base group-hover:text-primary transition-colors duration-300">{skill.name}</div>
-              </div>
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`bento-card p-8 group overflow-hidden border-beam-container
+                  ${isLarge ? 'md:col-span-2 md:row-span-1' : ''}
+                  ${isMedium ? 'md:row-span-2' : ''}
+                `}
+              >
+                <div className="relative z-10 h-full flex flex-col justify-between">
+                  <div className="flex justify-between items-start">
+                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center border transition-all duration-500 shadow-glow group-hover:scale-110 group-hover:text-white ${colors.bgLight} ${colors.border} group-hover:${colors.bg}`}>
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground opacity-50">{skill.category}</span>
+                  </div>
 
-              {/* PROGRESS BAR with glow */}
-              <div className="relative w-full bg-primary/5 h-2.5 rounded-full overflow-hidden border border-primary/10">
-                <motion.div
-                  className="relative h-2.5 rounded-full bg-gradient-to-r from-primary via-secondary-foreground to-primary"
-                  style={{ backgroundSize: '200% 100%' }}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  viewport={{ once: true }}
-                  transition={{
-                    width: { duration: 1.5, ease: "easeOut", delay: index * 0.1 },
-                    backgroundPosition: { duration: 3, repeat: Infinity, ease: "linear" }
-                  }}
-                  animate={{
-                    backgroundPosition: ['0% 0%', '100% 0%'],
-                  }}
-                >
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
-                </motion.div>
-              </div>
+                  <div className="space-y-2">
+                    <h3 className={`font-black tracking-tight text-white ${isLarge ? 'text-4xl' : 'text-2xl'}`}>{skill.name}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">{skill.description}</p>
+                  </div>
 
-              <div className="text-xs text-muted-foreground mt-2 font-medium group-hover:text-primary transition-colors duration-300">
-                Proficiency: {skill.level}%
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                  <div className="flex items-center gap-2 mt-4">
+                    <div className="h-1.5 flex-grow bg-white/5 rounded-full overflow-hidden relative">
+                      {/* Explicitly mapping color classes to ensure they apply */}
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: '100%' }}
+                        transition={{ duration: 1.5, delay: i * 0.2 }}
+                        className={`absolute left-0 top-0 h-full rounded-full ${colors.bg}`}
+                      />
+                    </div>
+                    <span className={`text-[10px] font-black ${colors.text}`}>{skill.level}</span>
+                  </div>
+                </div>
+
+                {/* Background decorative icons */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-700 pointer-events-none">
+                  <Icon className="w-64 h-64" />
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
